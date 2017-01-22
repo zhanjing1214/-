@@ -1,0 +1,25 @@
+#Git
+
+##本地文件备份到远程仓库
+- 首先你要login到你的git网页版or whatever上create一个仓库
+- 本地仓库建起来
+```
+$ git init
+```
+- 将本地的文件夹与先前create的仓库连接起来：cd到文件夹目录
+```
+git remote add origin git@github.com:zhanjing1214/AlgorithmNotes.git
+```
+- 本地文件搞起来
+```
+$ git add FILE_NAME
+$ git commit -m "DESCRIPTION"
+```
+- 把本地仓库同步到远程仓库
+```
+//第一次才要用-u
+$ git push -u origin master 
+```
+
+没错啦，就是这么简单，才开始上手git，早备份我的code就不会失踪了，挠墙...
+等我再用了其他的高级功能再来更新吧，虽然都是看的廖雪峰:）
